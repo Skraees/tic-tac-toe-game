@@ -5,97 +5,40 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tic tac game</title>
+    <link rel="stylesheet" href="style.css">
 </head>
-<style>
-    .con {
-        /* border: 2px solid black; */
-        width: 90vw;
-        height: 80vh;
-        margin: auto;
-        display: grid;
-        grid-template-columns: 50px 50px 50px;
-        grid-template-rows: 50px 50px 50px;
-        gap: 10px;
-        justify-content: center;
-        align-content: center;
-        /* background-color: rgb(68, 61, 74); */
-        box-sizing: border-box;
-    }
-
-    .but {
-        width: 50px;
-        height: 50px;
-        border: none;
-        box-shadow: 1px 1px 1px white;
-        font-size: 2rem;
-        background-color: white;
-        color: black;
-    }
-
-    main {
-        background-color: rgb(68, 61, 74);
-        margin: 20px;
-    }
-
-    .reset {
-        display: flex;
-        justify-content: center;
-    }
-    .set{
-        position: relative;
-        top: 40px;
-       
-    }
-    .game{
-        position: relative;
-        bottom: 45px;
-        align-items: center;
-        display: flex;
-        flex-direction: column;
-       ;
-       gap: 5px;
-    }
-    .back{
-        background-color: rgb(121, 214, 130); 
-         border: none; 
-        border-radius: 4px; 
-        padding: 8px;
-        height: 30px;
-    }
-    .you{
-        background-color: white;
-        padding: 5px;
-        width: 100px;
-        display: flex;
-        text-align: center;
-        display: none;
-    }
-    
-</style>
 
 <body>
     <main>
         <div class="reset">
             <button class="set back" id="tictac">Reset</button>
         </div>
-        <div class="con">
-            <button class="but"></button>
-            <button class="but"></button>
-            <button class="but"></button>
-            <button class="but"></button>
-            <button class="but"></button>
-            <button class="but"></button>
-            <button class="but"></button>
-            <button class="but"></button>
-            <button class="but"></button>
+        <div class="w">
 
-        </div>
-        
-        <div class="game">
-            <div class="you">
-               
+
+            <div class="con">
+                <button class="but"></button>
+                <button class="but"></button>
+                <button class="but"></button>
+                <button class="but"></button>
+                <button class="but"></button>
+                <button class="but"></button>
+                <button class="but"></button>
+                <button class="but"></button>
+                <button class="but"></button>
+
             </div>
-            <button class="back" >New Game</button>
+        </div>
+        <div class="game">
+            <div class="class">
+                <div class="you">
+
+                </div>
+            </div>
+            <div class="mod">
+
+                <button class="back">New Game</button>
+            </div>
         </div>
     </main>
     <script src="tic_tac.js"></script>
